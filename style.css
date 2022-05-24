@@ -350,7 +350,7 @@ input[type="submit"]:hover{
 }
 @meia screen and (max-width: 480px){
 	.section{
-		height:4000px;
+		height:auto;
 	}
 }
 
