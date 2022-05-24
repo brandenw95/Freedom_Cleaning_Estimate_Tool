@@ -348,11 +348,6 @@ input[type="submit"]:hover{
         width: 90vw;
     }
 }
-@meia screen and (max-width: 480px){
-	.section{
-		height:4000px;
-	}
-}
 
 .multiselect {
     background-color: rgba(255, 255, 255, 0.6);
