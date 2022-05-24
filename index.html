@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="multi-select.css">
+    
+    <title>calculator</title>
+</head>
+<body>
+    <section class="section">
+        <div class="content-container">
+            <div class="info">
+                <h2>Freedom Cleaning & Organizing Ltd. Cleaning Calculator</h2>
+                <p> Freedom Cleaning & Organizing Ltd. Cleaning Calculatorc.</p>
+            </div>
+            <div class="calculator-container">
+                <form action="action_page.php" method="post">
+                    <div class="calculator-content-header">
+                        <div class="header-text">
+                            <h3><div id="cost" class="cost_value"></div><br></h3> 
+                            <p>ESTIMATED TOTAL COST</p>
+                        </div>
+                            <img src="logo.png">
+                    </div>
+                    <div class="calculator-content-menu-select">
+
+                        <input type="radio" id="tab-1" name="clean_service" value="LittleBitClean_1_085" >
+                        <label for="tab-1">Little Bit Clean</label>
+
+                        <input type="radio" id="tab-2" name="clean_service" value="ClassicClean_2_149">
+                        <label for="tab-2">Classic Clean</label>
+
+                        <input type="radio" id="tab-3" name="clean_service" value="DiamondClean_3_210">
+                        <label for="tab-3">Diamond Clean</label>
+
+                        <input type="radio" id="tab-4" name="clean_service" value="HelloFreedom_4_389">
+                        <label for="tab-4">Hello Freedom</label>
+
+                        <input type="radio" id="tab-5" name="clean_service" value="GirlfriendPackage_5_254">
+                        <label for="tab-5">Girlfriend Package</label>
+
+                        <input type="radio" id="tab-6" name="clean_service" value="MoveOutClean_6_641">
+                        <label for="tab-6">Move-Out Clean</label>
+
+                        <input type="radio" id="tab-7" name="clean_service" value="InThePatch_7_250">
+                        <label for="tab-7">In The Patch Clean</label>
+
+                    </div>
+
+                    <div class="calculator-options-header">
+                        <h3><div id="options-header"></div></h3>
+                        
+                    </div>
+                    <div class="calculator-options-content">
+                        <div class="calculator-columns">
+                            <p class="default_text"><strong> Please choose a package above</strong></p>
+                            <div id="LittleBitClean_1_085" class="desc">
+                                <h4 style="color:#000; font-weight: bold;">FULL PACKAGE DETAILS: <a href="https://freedomcleaning.ca/service/" target="_blank" rel="noopener noreferrer">CLICK HERE</a></h4><br>
+                            <div class="multiselect">
+                                <div class="selectBox">
+                                  <select>
+                                    <option>Select Addons</option>
+                                  </select>
+                                  <div class="overSelect"></div>
+                                </div>
+                                <div id="checkboxes">
+
+                                  <label for="one"><input type="checkbox" id="one" class="checkbox lbc" name="lbc dishes"/>dishes</label>
+                                  <label for="two"><input type="checkbox" id="two" class="checkbox lbc" name="lbc dust main furniture" />dust main furniture</label>
+                                  <label for="three"><input type="checkbox" id="three" class="checkbox lbc" name="lbc entry way" />entry way</label>
+                                  <label for="four"><input type="checkbox" id="four" class="checkbox lbc" name="lbc walls spot checked" />walls spot checked</label>
+                                  <label for="five"><input type="checkbox" id="five" class="checkbox lbc" name="lbc toy pick up" />toy pick up</label>
+                                  <label for="six"><input type="checkbox" id="six" class="checkbox lbc" name="lbc beds made" />beds made </label>
+                                  <label for="seven"><input type="checkbox" id="seven" class="checkbox lbc" name="lbc appliance wipes/shine" />appliance wipes/shine</label>
+                                  <label for="eight"><input type="checkbox" id="eight" class="checkbox lbc" name="lbc floors" />floors</label>
+                                  <label for="nine"><input type="checkbox" id="nine" class="checkbox lbc" name="lbc bathrooms" />bathrooms</label>
+                                  <label for="ten"><input type="checkbox" id="ten" class="checkbox lbc" name="lbc garbages sanitized" />garbages sanitized</label>
+                                  <label for="eleven"><input type="checkbox" id="eleven" class="checkbox lbc" name="lbc Extra garbages changed" />Extra garbages changed</label>
+                                  <label for="twelve"><input type="checkbox" id="twelve" class="checkbox lbc" name="lbc baseboard dust- swiffer only" />baseboard dust- swiffer only</label>
+                                  <label for="thirteen"><input type="checkbox" id="thirteen" class="checkbox lbc" name="lbc doors spot checked" />doors spot checked</label>
+                                  <label for="fourteen"><input type="checkbox" id="fourteen" class="checkbox lbc" name="lbc Floors (vaccuum/mop)"/>Floors (vaccuum/mop)</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="ClassicClean_2_149" class="desc">
+                            <h4 style="color:#000; font-weight: bold;">FULL PACKAGE DETAILS: <a href="https://freedomcleaning.ca/service/" target="_blank" rel="noopener noreferrer">CLICK HERE</a></h4><br>
+                            <table>
+                                <tr class="header">
+                                    <td><b><u>Bathrooms (2)</u></b></td>
+                                    <td><b><u>Kitchen</u></b></td>
+                                    <td><b><u>Bedroom</u></b></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>tub/shower (2)</td>
+                                    <td>microwave </td>
+                                    <td>minor tidy</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>toilet </td>
+                                    <td>cabinets</td>
+                                    <td>beds made</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>sink</td>
+                                    <td>dishes</td>
+                                    <td>full dust of furniture</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>cabinetry</td>
+                                    <td>backsplash</td>
+                                    <td>garbages</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>shelving</td>
+                                    <td>appliances (external surface) clean and shined</td>
+                                    <td>tv dusting/cleaning</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>trash change</td>
+                                    <td>fold in place towels</td>
+                                    <td>window ledges</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>fold in place used towels</td>
+                                    <td>small appliance wiped/shined</td>
+                                    <td>mirror</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>shine taps</td>
+                                    <td>sink-clean dry</td>
+                                    <td>High Touch Zones</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>sink mirror/vanity</td>
+                                    <td>shine taps</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>toilet paper holder</td>
+                                    <td>main window</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>window ledges</td>
+                                    <td>window ledges</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>High Touch Zones</td>
+                                    <td>High Touch Zones</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                            <br>
+                            <table>
+                                <tr class="header">
+                                    <td><b><u>Living Area</u></td>
+                                    <td><b><u>Entry Way</u></td>
+                                    <td><b><u>floors</u></td>
+                                </tr>
+                                <tr>
+                                    <td>minor tidy</td>
+                                    <td>door sanitized/windows cleaned</td>
+                                    <td>everything picked up/moved</td>
+                                </tr>
+                                <tr>
+                                    <td>dust/wipe all furniture</td>
+                                    <td>walls spot-checked</td>
+                                    <td>sweep/vaccuum</td>
+                                </tr>
+                                <tr>
+                                    <td>tv dusting/cleaning</td>
+                                    <td>surfaces wiped and dusted</td>
+                                    <td>thourough mop</td>
+                                </tr>
+                                <tr>
+                                    <td>Check window ledges</td>
+                                    <td>mats moved and cleaned as needed</td>
+                                    <td>Furnature moved</td>
+                                </tr>
+                                <tr>
+                                    <td>Mirror</td>
+                                    <td>Shoes/ Boots placed nicely</td>
+                                    <td>High Touch Zones</td>
+                                </tr>
+                                <tr>
+                                    <td>High Touch Zones</td>
+                                    <td>High Touch Zones</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                        <div id="DiamondClean_3_210" class="desc">
+                            <h4 style="color:#000; font-weight: bold;">FULL PACKAGE DETAILS: <a href="https://freedomcleaning.ca/service/" target="_blank" rel="noopener noreferrer">CLICK HERE</a></h4><br>
+                            <h3><b>Everything in the classic Clean</b></h3>
+                            <h2><b>+</b></h2>
+                            
+                            <div class="diamond-option-container-flex">
+                                <div id="A">
+                                    <label  for="Diamond_Dropdown" style="display:inline-block;">A: </label>
+                                    <select id="Diamond_Dropdown" name="Diamond choice A">
+                                        <option value="none" data-price="0">Choose an Option from package A</option>
+                                        <option value="All dishes washed only" data-price="0">All dishes washed only</option>
+                                        <option value="Door Frames - top to bottom" data-price="0">Door Frames - top to bottom</option>
+                                        <option value="Walls: magic eraser" data-price="0">Walls: magic eraser</option>
+                                        <option value="Walls: spot checked" data-price="0">Walls: spot checked</option>
+                                        <option value="all blinds: dusted ONLY" data-price="0">All blinds: dusted ONLY</option>
+                                        <option value="Bedding changed/made " data-price="0">Bedding changed/made </option>
+                                        <option value="Fold a load of laundry" data-price="0">Fold a load of laundry</option>
+                                        <option value="Top to bottom dust: duster only" data-price="0">Top to bottom dust: duster only</option>
+                                    </select>
+                                </div>
+                                <h2><b>+</b></h2>
+                                <div id="B">
+                                    <label  for="Diamond_Dropdown" style="display:inline-block;">B: </label>
+                                    <select id="Diamond_Dropdown" name="Diamond choice B">
+                                        <option value="none" data-price="0">Choose an Option from package B</option>
+                                        <option value="Baseboards wiped (excluding scrubbing)" data-price="0">Baseboards wiped (excluding scrubbing)</option>
+                                        <option value="Pantry/Cupboard refresh: wipe/ tidy/ minor organize " data-price="0">Pantry/Cupboard refresh: wipe/ tidy/ minor organize</option>
+                                        <option value="All doors cleaned " data-price="0">All doors cleaned </option>
+                                        <option value="Under-a-sink cleaning" data-price="0">Under-a-sink cleaning</option>
+                                    </select>
+                                </div>
+                                <h2><b>+</b></h2>
+                            <div id="C">
+                            <label  for="Diamond_Dropdown" style="display:inline-block;">C: </label>
+                            <select id="Diamond_Dropdown" name="Diamond choice C">
+                                <option value="none" data-price="0">Choose an Option from package C</option>
+                                <option value="All window screens" data-price="0">All window screens</option>
+                                <option value="Fans (up to two)" data-price="0">Fans (up to two)</option>
+                                <option value="Light fixtures (up to 4 small)" data-price="0">Light fixtures (up to 4 small)</option>
+                                <option value="Cupboard tops cleaned - (plus $20 if super sticky)" data-price="0">Cupboard tops cleaned - (plus $20 if super sticky)</option>
+                                <option value="Fridge Clean" data-price="0">Fridge Clean</option>
+                                <option value="Blinds Deep Clean: 1 set = One Choice" data-price="0">Blinds Deep Clean: 1 set = One Choice</option>
+                            </select>
+                        </div>
+                            </div>
+                        </div>
+                        <div id="HelloFreedom_4_389" class="desc">
+                            <h4 style="color:#000; font-weight: bold;">FULL PACKAGE DETAILS: <a href="https://freedomcleaning.ca/service/" target="_blank" rel="noopener noreferrer">CLICK HERE</a></h4><br>
+                            <ul>
+                                <li><h4>All windows<h4></li>
+                                <li><h4>All Walls and Floors<h4></li>
+
+                            </ul>
+                            <ul>
+                                <li><h4>Grabage Removed<h4></li>
+                                <li><h4>Baseboards Wiped<h4></li>
+                            </ul>
+                        </div>
+                        <div id="GirlfriendPackage_5_254" class="desc"> 
+                            <h4 style="color:#000; font-weight: bold;">FULL PACKAGE DETAILS: <a href="https://freedomcleaning.ca/service/" target="_blank" rel="noopener noreferrer">CLICK HERE</a></h4><br>
+                            <ul>
+                                <li><h4>All dishes washed (put away at request)</h4></li>
+                                <li><h4>Laundry - wash/dry/fold 1 load</h4></li>
+
+                            </ul>
+                            <ul>
+                                <li><h4>Bedding - washed/ dried</h4></li>
+                                <li><h4>Tidying/Organizing visible areas (not inside of anything)</h4></li>
+                            </ul>
+                        </div>
+                        <div id="MoveOutClean_6_641" class="desc"> 
+                            <ul>
+                                <li><h4>All windows<h4></li>
+                                <li><h4>All Walls and Floors<h4></li>
+
+                            </ul>
+                            <ul>
+                                <li><h4>Grabage Removed<h4></li>
+                                <li><h4>Baseboards Wiped<h4></li>
+                            </ul>
+                            <h4 style="color:#000; font-weight: bold;">FULL PACKAGE DETAILS: <a href="https://freedomcleaning.ca/service/" target="_blank" rel="noopener noreferrer">CLICK HERE</a></h4><br>
+                            <div class="multiselect">
+                                <div class="selectBox1">
+                                  <select>
+                                    <option>Select Addons</option>
+                                  </select>
+                                  <div class="overSelect"></div>
+                                </div>
+                                <div id="checkboxes-1">
+
+                                  <label for="one_moc"><input type="checkbox" id="one_moc" class="checkbox" name="moc Vents"/>Vents</label>
+                                  <label for="two_moc"><input type="checkbox" id="two_moc" class="checkbox" name="moc Registers" />Registers</label>
+                                  <label for="three_moc"><input type="checkbox" id="three_moc" class="checkbox" name="moc Cabinets-kitchen" />Cabinets-kitchen</label>
+                                  <label for="four_moc"><input type="checkbox" id="four_moc" class="checkbox" name="moc Exterior windows" />Exterior windows</label>
+                                  <label for="five_moc"><input type="checkbox" id="five_moc" class="checkbox" name="moc window tracks/ per window" />window tracks/ per window</label>
+                                  <label for="six_moc"><input type="checkbox" id="six_moc" class="checkbox" name="moc Washer" />Washer</label>
+                                  <label for="seven_moc"><input type="checkbox" id="seven_moc" class="checkbox" name="moc Dryer" />Dryer</label>
+                                  <label for="eight_moc"><input type="checkbox" id="eight_moc" class="checkbox" name="moc Dishwasher" />Dishwasher</label>
+                                  <label for="nine_moc"><input type="checkbox" id="nine_moc" class="checkbox" name="moc inside oven/stove" />inside oven/stove</label>
+                                  <label for="ten_moc"><input type="checkbox" id="ten_moc" class="checkbox" name="moc inside fridge" />inside fridge</label>
+                                  <label for="eleven_moc"><input type="checkbox" id="eleven_moc" class="checkbox" name="moc Fridge vent cover" />Fridge vent cover</label>
+                                  <label for="twelve_moc"><input type="checkbox" id="twelve_moc" class="checkbox" name="moc tops of cupboards" />tops of cupboards</label>
+                                  <label for="thirteen_moc"><input type="checkbox" id="thirteen_moc" class="checkbox" name="moc inside hoodvent" />inside hoodvent</label>
+                                  <label for="fourteen_moc"><input type="checkbox" id="fourteen_moc" class="checkbox" name="moc garage cleaning"/>garage cleaning</label>
+                                  <label for="fifteen_moc"><input type="checkbox" id="fifteen_moc" class="checkbox" name="moc screens/screen"/>screens/screen</label>
+                                  <label for="sixteen_moc"><input type="checkbox" id="sixteen_moc" class="checkbox" name="moc cupboard bottoms"/>cupboard bottoms</label>
+                                  <label for="seventeen_moc"><input type="checkbox" id="seventeen_moc" class="checkbox" name="moc cabinets-bathroom"/>cabinets-bathroom</label>
+                                  <label for="eighteen_moc"><input type="checkbox" id="eighteen_moc" class="checkbox" name="moc Blinds/set"/>Blinds/set</label>
+                                  <label for="nineteen_moc"><input type="checkbox" id="nineteen_moc" class="checkbox" name="moc light fixtures/ fixture"/>light fixtures/ fixture</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="InThePatch_7_250" class="desc"> 
+                            <h4 style="color:#000; font-weight: bold;">FULL PACKAGE DETAILS: <a href="https://freedomcleaning.ca/service/" target="_blank" rel="noopener noreferrer">CLICK HERE</a></h4><br>
+                            <h4><b>Package is designed for small to medium camps in remote or industrial locations</b></h4>
+                            <h4>Please contact us for a Quote</h4>
+                        </div>
+                        
+                        </div>
+                    </div>
+                    <div class="calc-spacer"></div>
+                    <div class="family-pets-section">
+                        <div class="calculator-options-column">
+                            <div class="calculator-options-header"><h3>Pet Addons</h3></div>
+                            <div class="calculator-options-content">
+                                <label  for="pet_package_dropdown" style="display:inline-block;">Pet Addon Packages</label>
+                                <select id="pet_package_dropdown" name="Pet Package Select">
+                                    <option value="none" data-price="0">None</option>
+                                    <option value="EZ Pet" data-price="0">EZ Pet - Intended for homes with Very clean pets</option>
+                                    <option value="Regular Pet" data-price="0">Regular - Intended for Very hairy, pet loved homes </option>
+                                </select>
+                                <div id="EZ_Pet_Addons">
+                                    <p><b>Addon Includes</b></p>
+                                    <div class="calc-spacer"></div>
+                                    <ul class="family-pet-addon">
+                                        <li>thourough vaccuum</li>
+                                        <li>cat tree/scratching post-lightly vaccuumed and/or Dog beds lightly Vaccuumed</li>
+                                        <li>spot check for pet love on main windows/doors</li>
+
+                                    </ul>
+                                </div>
+                                <div id="Regular_Pet_Addons">
+                                    <p><b>Addon Includes</b></p>
+                                    <div class="calc-spacer"></div>
+                                    <ul class="family-pet-addon">
+                                        <li>wash all empty pet dishes</li>
+                                        <li>walls checked below hip + door bottoms checked</li>
+                                        <li>thourough vaccuum</li>
+                                        <li>cat tree/scratching post -lightly vaccuumed and/or Dog beds lightly Vaccuumed</li>
+                                        <li>spot check for pet love on main windows/doors</li>
+                                        <li>All dishes collected and washed</li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="calculator-options-column">
+                            <div class="calculator-options-header"><h3>Family Addons</h3></div>
+                            <div class="calculator-options-content">
+                                <label  for="family_package_dropdown" style="display:inline-block;">Family Addon Packages</label>
+                                <select id="family_package_dropdown" name="Family Package Select">
+                                    <option value="none" data-price="0">None</option>
+                                    <option value="EZ Family" data-price="0">EZ Family - up to 2 children (1-16 yrs) - Pretty clean</option>
+                                    <option value="Regular Family" data-price="0">Regular - up to 2 children (1-16 yrs) - sticky/ messy </option>
+                                </select>
+                                
+                                <div id="EZ_Family_Addons">
+                                    <p><b>Addon Includes</b></p>
+                                    <div class="calc-spacer"></div>
+                                    <ul class="family-pet-addon">
+                                        <li>Clean kitchen chairs</li>
+                                        <li>Clean/Sanitized Booster or highchairs</li>
+                                        <li>garbage collectged/removed from all rooms</li>
+                                        <li>Beds made</li>
+                                        <li>spot check walls/doors-minor magic erase</li>
+                                        <li>All dishes collected and washed</li>
+                                    </ul>
+                                </div>
+                                <div id="Regular_Family_Addons">
+                                    <p><b>Addon Includes</b></p>
+                                    <div class="calc-spacer"></div>
+                                    <ul class="family-pet-addon">
+                                        <li>Clean kitchen chairs</li>
+                                        <li>Clean/Sanitized Booster or highchairs</li>
+                                        <li>spot check walls/doors-minor magic erase</li>
+                                        <li>Beds made</li>
+                                        <li>Tidy of kids rooms- toys picked up, laundry in baskets</li>
+                                        <li>All dishes collected and washed</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="calc-spacer"></div>
+                    <div class="calculator-user-info">
+                        <h3>Your Information</h3>
+                        <div class="calculator-columns">
+                            <ul>
+                                <li><label for="text">First Name</label><input type="text" name="firstname" required></li>
+                                <li><label for="text">Last Name</label><input type="text" name="lastname" required></li>
+                                <li><label for="text">Address</label><input type="text" name="address" required></li>
+                                
+                            </ul>
+                            <ul>
+                                <li><label for="text">Contact Phone Number</label><input type="text" name="number" required></li>
+                                <li><label for="text">Contact Email</label><input type="text" name="email" required></li>
+                                <li><label for="text">Message (Optional)</label><input type="text" name="note"></li>
+                            </ul>   
+                            <ul>
+                                
+                                
+                            </ul>   
+                            <ul>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <input type="submit" value="Book Now" ></input>
+                </form>
+
+
+            </div>
+            <br><br>
+        </div>  
+    </section>
+<!-- Scripts start-->
+<script type="text/javascript">
+    function Reset() {
+        var dropDown = document.getElementById("dropdown");
+        dropDown.selectedIndex = 0;
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+<script src="jquery.multi-select.js"></script>
+<!-- Scripts End-->
+</body>
+
+</html>
