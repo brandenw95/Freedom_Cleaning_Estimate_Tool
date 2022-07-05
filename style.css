@@ -71,7 +71,7 @@
 
 }
 .section{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: url('bg01.jpg') no-repeat center center / cover ;
     
