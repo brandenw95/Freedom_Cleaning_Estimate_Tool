@@ -433,6 +433,9 @@ input[type="submit"]:hover{
     .calculator-container{
         width: 90vw;
     }
+	.header-text h3 .cost_value{
+    font-size: 5.5vw;
+	}
 }
 
 
